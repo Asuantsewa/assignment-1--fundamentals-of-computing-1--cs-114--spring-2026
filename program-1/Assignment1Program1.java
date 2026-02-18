@@ -26,6 +26,7 @@ public class Assignment1Program1 {
       System.out.println(intcelsuis);
       
       
-     input.close();
+     /*input.close();*/
+     temp.close();
   }
 }
