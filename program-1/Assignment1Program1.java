@@ -28,8 +28,6 @@ public class Assignment1Program1 {
       double celsuis = (farenheitTemp - 32) / 1.98;
       int intcelsuis = (int) celsuis;
       System.out.println(intcelsuis);
-      
-      
-     /*input.close();*/
-     temp.close();
+  temp.close();
+  scanner.close();
   }
