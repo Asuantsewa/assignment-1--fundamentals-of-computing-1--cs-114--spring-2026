@@ -18,7 +18,18 @@ public class Assignment1Program1 {
       String middle = input.substring(1,4);
       String reversedMiddle = new StringBuilder(middle).reverse().toString();
       System.out.println(reversedMiddle);
-    }
+    double farenheitTemp;
+    Scanner temp = new Scanner(System.in);
+    System.out.println("Enter a number in Farenheit: ");
+    farenheitTemp = temp.nextDouble();
+    double celsuis = (farenheitTemp - 32.0) * 5.0 / 9.0;
+    System.out.println(celsuis);
+  }
+  int max = 16384;
+  int min = 32;
+  Random number = new Random();
+  int randNumber = number.nextInt(max - min + 1) + min;
+  System.out.println("Random number generated: " + randNumber);
   }
   }
 }
