@@ -16,17 +16,7 @@ public class Assignment1Program1 {
     return; 
     }else{
       String middle = input.substring(1,4);
-        String reversedMiddle = new StringBuilder(middle).reverse().toString();
-        System.out.println( reversedMiddle);
-        scanner.close();
-      }
-     double farenheitTemp;
-     Scanner temp = new Scanner(System.in);
-     System.out.println("Enter a nimber in Farenheit: ");
-     farenheitTemp = temp.nextDouble();
-      double celsuis = (farenheitTemp - 32) / 1.98;
-      int intcelsuis = (int) celsuis;
-      System.out.println(intcelsuis);
-  temp.close();
-  scanner.close();
+      String reversedMiddle = new StringBuilder(middle).reverse().toString();
+      System.out.println(reversedMiddle);
+    }
   }
