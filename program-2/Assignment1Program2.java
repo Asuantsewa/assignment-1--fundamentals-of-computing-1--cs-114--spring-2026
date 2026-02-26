@@ -4,8 +4,11 @@ public class Assignment1Program2 {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter a base 10 number to convert: ");
+    System.out.print("Enter a base 10 number to convert betweeen (0 - 80): ");
     int base10Number = scanner.nextInt();
+    if( base10Number < 0 || base10Number > 80){
+    return;
+    }
 
   System.out.print("Enter the target base (between 2 and 9): ");
   int targetBase = scanner.nextInt();
@@ -28,4 +31,5 @@ public class Assignment1Program2 {
   char digit = (remainder < 10) ? (char) ('0' + remainder) : (char) ('A' + remainder - 10);
   return convertToBase(number / base, base) + digit;
  }
+ scanner.close();
 }
