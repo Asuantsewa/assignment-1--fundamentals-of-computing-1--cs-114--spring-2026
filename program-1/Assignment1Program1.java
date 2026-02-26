@@ -31,6 +31,7 @@ public class Assignment1Program1 {
   Random number = new Random();
   int randNumber = number.nextInt(max - min + 1) + min;
   System.out.println("Random number generated: " + randNumber);
+    }
   }
   System.out.println( "Your new string is" +celsuis +reversedMiddle +randNumber);
 }
