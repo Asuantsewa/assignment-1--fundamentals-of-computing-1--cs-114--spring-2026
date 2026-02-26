@@ -15,21 +15,21 @@ public class Assignment1Program2 {
 
   if (targetBase < 2 || targetBase > 9) {
     System.out.println("Invalid base. Please enter a base between 2 and 9.");
-  return;
-}
+    return;
+  }
   String convertedNumber = convertToBase(base10Number, targetBase);
     System.out.println("Converted number: " + convertedNumber);
 
   int largest4DigitNumber = (int) Math.pow(targetBase, 4) - 1;
     System.out.println("Largest 4 digit number in base " + targetBase + ": " + largest4DigitNumber);
-}
+  }
   public static String convertToBase(int number, int base) {
-  if (number == 0) {
-  return "";
-}
-  int remainder = number % base;
-  char digit = (remainder < 10) ? (char) ('0' + remainder) : (char) ('A' + remainder - 10);
-  return convertToBase(number / base, base) + digit;
- }
- scanner.close();
+    if (number == 0) {
+    return "";
+    }
+    int remainder = number % base;
+    char digit = (remainder < 10) ? (char) ('0' + remainder) : (char) ('A' + remainder - 10);
+    return convertToBase(number / base, base) + digit;
+  }
+//scanner.close();
 }
